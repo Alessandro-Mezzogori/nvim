@@ -53,6 +53,7 @@ return require('packer').startup(function(use)
   }
 
   use({'mfussenegger/nvim-dap'})
+  use({'rcarriga/nvim-dap-ui'})
 
   use {
       "folke/trouble.nvim",
@@ -67,4 +68,19 @@ return require('packer').startup(function(use)
   }
 
   use 'lewis6991/gitsigns.nvim'
+
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons' }
+  }
+
+  use { 
+      'numToStr/Comment.nvim',  
+      config = function ()
+        require('Comment').setup()
+      end
+  }
+
+  use { 'folke/neodev.nvim' }
+
 end)

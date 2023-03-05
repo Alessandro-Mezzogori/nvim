@@ -74,6 +74,12 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\Alessandro\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "C:\\Users\\Alessandro\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
@@ -124,6 +130,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Alessandro\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Alessandro\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Alessandro\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
@@ -134,6 +145,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Alessandro\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Alessandro\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\Alessandro\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
@@ -143,6 +159,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Alessandro\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "C:\\Users\\Alessandro\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -208,6 +229,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\ne\0\0\3\0\6\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\3\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\nsetup\14rose-pine\frequire\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")

@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
 
   use({ "nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" }})
   use({ "nvim-treesitter/playground" })
+  use 'nvim-treesitter/nvim-treesitter-context'
   use({ "theprimeagen/harpoon" })
   use({ "mbbill/undotree" })
   use({ "tpope/vim-fugitive" })
@@ -53,7 +54,7 @@ return require('packer').startup(function(use)
   }
 
   use({'mfussenegger/nvim-dap'})
-  use({'rcarriga/nvim-dap-ui'})
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
   use {
       "folke/trouble.nvim",
@@ -82,5 +83,4 @@ return require('packer').startup(function(use)
   }
 
   use { 'folke/neodev.nvim' }
-
 end)

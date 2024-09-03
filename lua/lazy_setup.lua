@@ -19,7 +19,47 @@ require("lazy").setup({
         buffer_leader_key = 'm', -- Per Buffer Mappings
       }
     },
-    { "dmmulroy/ts-error-translator.nvim", }, -- Matt Peacock ? implementations of typescript error tranlstor
+    {
+      'nvim-telescope/telescope.nvim',
+      opts = function(_, opts)
+        opts.pickers = opts.pickers or {};
+
+        -- TODO: remove workaround when telescope is fixed with plenary.path2
+        opts.pickers.find_files = {
+          hidden = true,
+          find_command = {
+            'rg',
+            '--files',
+            '--color=never',
+            '--no-heading',
+            '--line-number',
+            '--column',
+            '--smart-case',
+            '--hidden',
+            '--glob',
+            '!{.git/*,.svelte-kit/*,target/*,node_modules/*}',
+            '--path-separator',
+            '/',
+          }
+        }
+
+        opts.pickers.live_grep = {
+          hidden = true,
+          additional_args = {
+            '--path-separator',
+            '/',
+          }
+        }
+
+        opts.pickers.grep_string = {
+          hidden = true,
+          additional_args = {
+            '--path-separator',
+            '/',
+          }
+        }
+      end
+    },
     { import = "community" },
     { import = "plugins" },
   } --[[@as LazySpec]],

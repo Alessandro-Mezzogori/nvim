@@ -70,9 +70,6 @@ vim.api.nvim_create_user_command("Pdf", function(opts)
     end
   end
 
-  print("echo " .. exec)
-  print("echo " .. fullpath)
-
   -- Run your executable asynchronously
   -- TODO: cross platform ( ma devo fare anche l'eseguibile webview2)
 
